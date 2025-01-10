@@ -1,9 +1,8 @@
-import Ads from "@/Components/Home/Ads/Ads";
-import Banner from "@/Components/Home/Banner";
-import Categories from "@/Components/Home/Categories/Categories";
-import Features from "@/Components/Home/Features/Features";
-import NewArrival from "@/Components/Home/NewArrival/NewArrival";
-import TrendingProducts from "@/Components/Home/TrendingProducts/TrendingProducts";
+import Ads from "@/components/Home/Ads/Ads";
+import Banner from "@/components/Home/Banner";
+import Categories from "@/components/Home/Categories/Categories";
+import Features from "@/components/Home/Features/Features";
+import NewArrival from "@/components/Home/NewArrival/NewArrival";
 
 const Page = () => {
   return (
@@ -13,7 +12,7 @@ const Page = () => {
       <Categories />
       <NewArrival />
       <Ads />
-      <TrendingProducts />
+      {/* <TrendingProducts /> */}
     </>
   );
 };

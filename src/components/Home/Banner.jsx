@@ -5,7 +5,7 @@ const Banner = () => {
       style={{ backgroundImage: "url('assets/images/banner-bg.jpg')" }}
     >
       <div className="container">
-        <h1 className="text-6xl text-gray-800 font-medium mb-4 capitalize">
+        <h1 className="text-4xl md:text-6xl text-gray-800 font-medium mb-4 capitalize">
           best collection for <br /> home decoration
         </h1>
         <p>
@@ -18,7 +18,7 @@ const Banner = () => {
           <a
             href="#"
             className="bg-primary border border-primary text-white px-8 py-3 font-medium 
-                    rounded-md hover:bg-transparent hover:text-primary"
+                    rounded-md hover:bg-transparent hover:text-primary duration-300"
           >
             Shop Now
           </a>

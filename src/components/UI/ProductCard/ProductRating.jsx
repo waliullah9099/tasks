@@ -21,13 +21,3 @@ const ProductRating = ({ rating }) => {
 };
 
 export default ProductRating;
-
-// const ratingChanged = (newRating) => {
-//   console.log(newRating);
-// };
-
-// render(
-//   ,
-
-//   document.getElementById("where-to-render") ffd700
-// );

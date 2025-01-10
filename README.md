@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# E-Commerce API Project
 
-## Getting Started
+Next.js SQLite API Project with Zustand and useReducer
 
-First, run the development server:
+## Project Setup
+
+Follow the instructions below to set up the project locally:
+
+# Clone the Repository:
+
+git clone [<repository-url>](https://github.com/waliullah9099/task/)
+cd <repository-folder>
+
+## Install Dependencies:
+
+```bash
+npm install
+```
+
+## Run the Development Server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The development server will start at http://localhost:3000.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Database Setup
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+This project uses SQLite as the database. Follow these steps to set it up:
 
-## Learn More
+1. Create the database file:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+touch database.sqlite
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Create the necessary tables using the following SQL schema:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```sql
+CREATE TABLE products (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    image TEXT NOT NULL,
+    title TEXT NOT NULL,
+    price REAL NOT NULL,
+    oldPrice REAL,
+    rating REAL NOT NULL,
+    description TEXT NOT NULL,
+    addTime TEXT NOT NULL
+);
+```
 
-## Deploy on Vercel
+## Features
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# route: http://localhost:3000/dashboard
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- GET /products: Fetches all products.
+- POST /products: Adds a new product to the database.
+- PUT /products/id: Update a single product
+- DELETE /products/id: Delete a single product
+
+## Live Link: [task-six-psi.vercel.app](https://task-six-psi.vercel.app/)
+
+## Video Link: https://drive.google.com/file/d/1kaQlwRMBbAofx4i7dLJKlzF8STsqKMfz/view?usp=sharing

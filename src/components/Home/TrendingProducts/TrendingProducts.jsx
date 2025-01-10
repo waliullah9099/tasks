@@ -1,4 +1,4 @@
-import ProductCard from "../ProductCard/ProductCard";
+import ProductCard from "../../UI/ProductCard/ProductCard";
 
 const TrendingProducts = () => {
   const products = [

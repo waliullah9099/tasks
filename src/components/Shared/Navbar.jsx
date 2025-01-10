@@ -1,7 +1,9 @@
+"use client";
 import Link from "next/link";
 import { DropdownItem } from "./DropdownItems";
 
 const Navbar = () => {
+  // const cartItems = useCartStore((state) => state.cartItems);
   const dropdownItems = [
     {
       href: "#",
@@ -72,29 +74,29 @@ const Navbar = () => {
               Home
             </Link>
             <Link
-              href="/shop"
+              href="/"
               className="text-gray-200 hover:text-white transition"
             >
               Shop
             </Link>
             <Link
-              href="/about"
+              href="/"
               className="text-gray-200 hover:text-white transition"
             >
               About Us
             </Link>
             <Link
-              href="/contact"
+              href="/"
               className="text-gray-200 hover:text-white transition"
             >
               Contact Us
             </Link>
           </div>
           <Link
-            href="/login"
+            href="/dashboard"
             className="text-gray-200 hover:text-white transition"
           >
-            Login
+            Dashboard
           </Link>
         </div>
       </div>

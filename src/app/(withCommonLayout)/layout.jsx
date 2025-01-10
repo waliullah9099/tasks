@@ -1,6 +1,6 @@
-import Footer from "@/Components/Shared/Footer/Footer";
-import Header from "@/Components/Shared/Header";
-import Navbar from "@/Components/Shared/Navbar";
+import Footer from "@/components/Shared/Footer/Footer";
+import Header from "@/components/Shared/Header";
+import Navbar from "@/components/Shared/Navbar";
 
 const CommonLayout = ({ children }) => {
   return (
