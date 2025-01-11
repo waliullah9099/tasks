@@ -17,15 +17,21 @@ cd <repository-folder>
 npm install
 ```
 
-## Run the Development Server:
+### Run the Development Server:
 
 ```bash
 npm run dev
 ```
 
+### Unit Test:
+
+```bash
+npm test
+```
+
 The development server will start at http://localhost:3000.
 
-## Database Setup
+### Database Setup
 
 This project uses SQLite as the database. Follow these steps to set it up:
 
@@ -50,15 +56,15 @@ CREATE TABLE products (
 );
 ```
 
-## Features
+### Features
 
-# route: http://localhost:3000/dashboard
+#### route: http://localhost:3000/dashboard
 
 - GET /products: Fetches all products.
 - POST /products: Adds a new product to the database.
 - PUT /products/id: Update a single product
 - DELETE /products/id: Delete a single product
 
-## Live Link: [task-six-psi.vercel.app](https://task-six-psi.vercel.app/)
+#### Live Link: [task-six-psi.vercel.app](https://task-six-psi.vercel.app/)
 
-## Video Link: https://drive.google.com/file/d/1kaQlwRMBbAofx4i7dLJKlzF8STsqKMfz/view?usp=sharing
+##### Video Link: https://drive.google.com/file/d/12P4hAC23KnHtFTqE1iTB0UJ_JysjADbA/view?usp=sharing
